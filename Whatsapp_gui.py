@@ -134,11 +134,6 @@ class MainWindow(qtw.QTabWidget):
                 if event.key() == Qt.Key_Space:
                         test_method()
 
-        def test_method():
-                print('Space key pressed')
-
-        self.show()
-        _id = QtGui.QFontDatabase.addApplicationFont("Anton-Regular.ttf")
         
         
 
