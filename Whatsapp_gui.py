@@ -97,16 +97,11 @@ class MainWindow(qtw.QTabWidget):
         form_layout.addRow(Number, self.NumberEd)
         form_layout.addRow(repLabel, repet)
         form_layout.addRow(EveryLabel, every)
-        
-        
-        #form_layout.addRow(Minute, my_combo)
-        
-        self.setLayout(form_layout)
-        
-       
         form_layout.addRow(Hour,my_combo)
         form_layout.addRow(Minute,my_hour)
         form_layout.addRow(pybutton)
+        
+        self.setLayout(form_layout)
      
 
 #-----------------
@@ -124,15 +119,6 @@ class MainWindow(qtw.QTabWidget):
         Send.move(50, 50)  
         self.layout().addWidget(Send)'''
 
-        
-        #pybutton.clicked.connect(self.press_it())
-        
-        
-        
-
-        def keyPressEvent(event):
-                if event.key() == Qt.Key_Space:
-                        test_method()
 
         
         
