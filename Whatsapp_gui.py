@@ -99,7 +99,17 @@ class MainWindow(qtw.QTabWidget):
         form_layout.addRow(EveryLabel, every)
         form_layout.addRow(Hour,my_combo)
         form_layout.addRow(Minute,my_hour)
+        
+        
+        #Buttons
+        Send = qtw.QPushButton("Send", clicked = lambda: press_it())
+        Send.resize(100,32)
+        Send.move(50, 50)  
+        self.layout().addWidget(Send)
+        
+        #Form Layout
         form_layout.addRow(pybutton)
+        
         
         self.setLayout(form_layout)
      
@@ -113,11 +123,7 @@ class MainWindow(qtw.QTabWidget):
 
 
         
-        #Buttons
-        '''Send = qtw.QPushButton("Send", clicked = lambda: press_it())
-        Send.resize(100,32)
-        Send.move(50, 50)  
-        self.layout().addWidget(Send)'''
+
 
 
         
